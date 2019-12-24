@@ -46,8 +46,89 @@
       display: block
       width: 100%
       margin-bottom: 1.85rem
+@media screen and ( max-width: 1024px )
+  .row 
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    flex-wrap: wrap
+  .col-30
+    flex-basis: 45%
+    margin-left: 1.5rem
+  .types
+    &__card
+      margin-bottom: 5rem
+  .card
+    &__text
+      margin-left: 0
+@media screen and ( max-width: 760px )
+  .row
+    flex-direction: column
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 5rem
+  .card
+    &__text
+      margin-left: 0
+  .projects
+    &__swiper
+      &-container
+        &--inside
+          display: block
+        &--outside
+          display: none
+  
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down
       display: none
-  
+
+
+@media screen and ( min-width: 760px )
+  .section
+    &-title
+      &__heading
+        &--light
+          color: $light
+      &__description
+        color: $light
+  .mrow
+    flex-direction: row
+    justify-content: center
+    align-items: baseline
+    flex-wrap: wrap
+  .mcard
+    flex-basis: 45%
+    margin-left: 1.5rem
+    &__text
+      position: relative
+      max-width: 23.6rem
+      margin: 0 auto
+      margin-top: -9rem
+      padding: 1.79rem 2.14rem
+      background-color: $light
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+
+@media screen and ( min-width: 1024px )
+  .section
+    &-title
+      &__heading
+        &--light
+          color: $light
+      &__description
+        color: $light
+  .mrow
+    flex-direction: row
+    justify-content: space-between
+    align-items: baseline
+  .mcard
+    flex-basis: 30%
+    &__text
+      position: relative
+      max-width: 23.6rem
+      margin: 0 auto
+      margin-top: -9rem
+      padding: 1.79rem 2.14rem
+      background-color: $light
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
