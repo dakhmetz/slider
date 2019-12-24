@@ -373,6 +373,7 @@ template {
     margin-right: 0.64rem; }
 
 #top {
+  z-index: 999;
   background-color: #fff;
   bottom: 0;
   right: 0;
@@ -886,7 +887,18 @@ h3 {
   .projects__swiper-container--inside {
     display: block; }
   .projects__swiper-container--outside {
-    display: none; } }
+    display: none; }
+  .col-50 {
+    width: 100%; }
+  .section-title__text {
+    text-align: center;
+    margin: 2rem auto; }
+  .section-title--left {
+    text-align: center; }
+  .section-title__word {
+    display: block; }
+    .section-title__word::after {
+      display: none; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
